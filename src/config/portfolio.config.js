@@ -89,15 +89,33 @@ const portfolio = {
       ],
     },
     {
-      role: 'Software Engineer',
+      role: 'Undergraduate Software Engineer',
       company: 'Intellect Systems',
-      dates: 'Nov 2023 – Jul 2024',
+      dates: 'Oct 2023 – Jul 2024',
       bullets: [
         'Facilitated technical workshops across 5+ departments, implementing automation solutions that reduced manual workflows by 30%.',
         'Developed business intelligence tools using Power BI and .NET, enhancing data-driven decision-making capabilities.',
         'Partnered with C-level executives to align development initiatives with strategic objectives and long-term technical roadmaps.',
         'Automated critical business processes, developing email dispatch systems that reduced human error by 70% and saved 10+ hours weekly.',
         'Built internal task tracking system from concept to deployment, achieving company-wide adoption.',
+      ],
+    },
+    {
+      role: 'Committee Member',
+      company: 'ComSSA - Curtin Computer Science Students Association',
+      dates: 'Jan 2024 – Jul 2024',
+      bullets: [
+        'Spearheaded technical initiatives for community platform development, enhancing member engagement through innovative solutions.',
+        'Collaborated with event management teams to execute seamless technical events and educational workshops.',
+      ],
+    },
+    {
+      role: 'Head Coach - Under 12s Basketball',
+      company: 'Volunteer',
+      dates: 'Apr 2020 – Oct 2022',
+      bullets: [
+        'Designed and delivered structured training programs for youth athletes, emphasising skill development, teamwork, and leadership.',
+        'Mentored 25+ athletes, instilling discipline, sportsmanship, and strong team culture.',
       ],
     },
   ],
@@ -278,8 +296,8 @@ const portfolio = {
     github: 'https://github.com/Brandon-Hale',
     /** LinkedIn profile URL */
     linkedin: 'https://linkedin.com/in/brandon-hale-',
-    /** Twitter / X profile URL — set to null if you don't use it */
-    twitter: null,
+    /** Twitter / X profile URL */
+    twitter: 'https://x.com/Brandon__Hale',
   },
 }
 

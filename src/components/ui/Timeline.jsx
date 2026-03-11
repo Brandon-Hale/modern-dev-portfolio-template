@@ -47,7 +47,7 @@ export default function Timeline({ items }) {
               <ul className="mt-3 space-y-2">
                 {item.bullets.map((bullet, j) => (
                   <li key={j} className="text-body text-sm leading-relaxed flex gap-2">
-                    <span className="text-accent mt-1 shrink-0">▸</span>
+                    <span className="text-accent shrink-0">▸</span>
                     <span>{bullet}</span>
                   </li>
                 ))}
