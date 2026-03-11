@@ -42,11 +42,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileOpen(false)
-  }, [location.pathname])
-
   const scrollToSection = (id) => {
     setMobileOpen(false)
     const el = document.getElementById(id)
