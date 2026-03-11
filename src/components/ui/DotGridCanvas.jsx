@@ -60,7 +60,35 @@ export default function DotGridCanvas() {
       targetRef.current = { x: e.clientX, y: e.clientY }
     }
 
+    // Cache content zone rects so we can exclude them from the effect
+    const contentRectsRef = { current: [] }
+    const updateContentRects = () => {
+      const selectors = 'section > div, .max-w-6xl, .max-w-3xl, .max-w-2xl, nav'
+      const els = document.querySelectorAll(selectors)
+      contentRectsRef.current = Array.from(els).map((el) => {
+        const r = el.getBoundingClientRect()
+        return {
+          left: r.left - 24,
+          right: r.right + 24,
+          top: r.top + window.scrollY - 12,
+          bottom: r.bottom + window.scrollY + 12,
+        }
+      })
+    }
+
+    const isInContentZone = (x, y) => {
+      for (let i = 0; i < contentRectsRef.current.length; i++) {
+        const r = contentRectsRef.current[i]
+        if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) return true
+      }
+      return false
+    }
+
+    let rectTimer = 0
     const draw = () => {
+      // Refresh content rects every ~30 frames to stay accurate
+      if (rectTimer++ % 30 === 0) updateContentRects()
+
       // Lerp viewport position for smooth movement
       const cur = currentRef.current
       const tgt = targetRef.current
@@ -86,7 +114,8 @@ export default function DotGridCanvas() {
         let opacity = BASE_OPACITY
         let radius = BASE_RADIUS
 
-        if (dist < EFFECT_RADIUS) {
+        // Only activate dots outside content zones
+        if (dist < EFFECT_RADIUS && !isInContentZone(dot.x, dot.y)) {
           const t = 1 - dist / EFFECT_RADIUS
           opacity = BASE_OPACITY + t * (0.45 - BASE_OPACITY)
           radius = BASE_RADIUS + t * 1
