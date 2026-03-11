@@ -9,11 +9,12 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Lenis from 'lenis'
 import Navbar from './components/ui/Navbar'
+import DotGridCanvas from './components/ui/DotGridCanvas'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import useMousePosition from './hooks/useMousePosition'
 
-function CursorEffects() {
+function CursorDot() {
   const mouse = useMousePosition()
   const isTouchDevice =
     typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
@@ -21,24 +22,11 @@ function CursorEffects() {
   if (isTouchDevice) return null
 
   return (
-    <>
-      {/* Dot grid spotlight */}
-      <div
-        className="cursor-spotlight"
-        style={{
-          background:
-            mouse.x > 0
-              ? `radial-gradient(600px circle at ${mouse.x}px ${mouse.y}px, rgba(13,27,75,0.04), transparent 70%)`
-              : 'transparent',
-        }}
-      />
-      {/* Custom cursor dot */}
-      <motion.div
-        className="custom-cursor"
-        animate={{ x: mouse.x - 6, y: mouse.y - 6 }}
-        transition={{ type: 'spring', stiffness: 500, damping: 28, mass: 0.5 }}
-      />
-    </>
+    <motion.div
+      className="custom-cursor"
+      animate={{ x: mouse.x - 6, y: mouse.y - 6 }}
+      transition={{ type: 'spring', stiffness: 500, damping: 28, mass: 0.5 }}
+    />
   )
 }
 
@@ -93,7 +81,8 @@ export default function App() {
     <BrowserRouter>
       <div className="dot-grid-bg min-h-screen relative">
         <SmoothScroll />
-        <CursorEffects />
+        <DotGridCanvas />
+        <CursorDot />
         <Navbar />
         <AnimatedRoutes />
       </div>
