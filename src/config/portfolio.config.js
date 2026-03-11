@@ -28,13 +28,17 @@ const portfolio = {
    * About section — a paragraph or two about yourself.
    * Supports multiple lines as a single string.
    */
-  bio: `I'm a Software Engineer specialising in full-stack development, AI-driven solutions, and legacy system modernisation. I've delivered 5+ enterprise applications leveraging .NET, React, and Azure AI — with measurable performance gains across the board.\n\nI hold a Bachelor of Computing in Software Engineering from Curtin University, with concentrations in Distributed Systems, Cloud Computing, and Artificial Intelligence. I'm passionate about scalable architecture, database optimisation, and CI/CD automation — and I'm always looking for the next challenge to solve with clean, maintainable code.`,
+  bio: `I'm a Software Engineer specialising in full-stack development, AI-driven solutions, and legacy system modernisation. I've delivered 5+ enterprise applications leveraging .NET, React, and Azure AI - with measurable performance gains across the board.\n\nI hold a Bachelor of Computing in Software Engineering from Curtin University, with concentrations in Distributed Systems, Cloud Computing, and Artificial Intelligence. I'm passionate about scalable architecture, database optimisation, and CI/CD automation - and I'm always looking for the next challenge to solve with clean, maintainable code.`,
 
   /**
    * Skills — displayed as tag pills in the About section.
    * List your core technologies and tools.
    */
   skills: [
+    'Azure',
+    'AWS',
+    'OpenAI',
+    'Claude API',
     'C#',
     '.NET Core',
     'React',
@@ -43,9 +47,6 @@ const portfolio = {
     'SQL Server',
     'Java',
     'Python',
-    'Azure',
-    'AWS',
-    'Entity Framework',
     'Power BI',
     'Node.js',
     'HTML/CSS',
@@ -53,7 +54,6 @@ const portfolio = {
     'CI/CD',
     'OAuth 2.0',
     'REST APIs',
-    'Docker',
     'Agile/Scrum',
   ],
 
@@ -64,11 +64,23 @@ const portfolio = {
   experience: [
     {
       /** Your job title */
+      role: 'Associate Software Engineer',
+      /** Company name */
+      company: 'RAC WA',
+      /** Employment dates */
+      dates: 'Apr 2026 – Present',
+      /** Key accomplishments as bullet points */
+      bullets: [
+        'Starting in 3 weeks.'
+      ],
+    },
+    {
+      /** Your job title */
       role: 'Full Stack Software Engineer',
       /** Company name */
       company: 'Australian Institute of Management',
       /** Employment dates */
-      dates: 'Jul 2024 – Present',
+      dates: 'Jul 2024 – Apr 2026',
       /** Key accomplishments as bullet points */
       bullets: [
         'Leveraged Azure AI Search and Azure OpenAI to implement RAG for intelligent document processing, enabling personalised customer feedback and actionable advice.',
@@ -283,7 +295,7 @@ const portfolio = {
 
   /** Subtitle shown on the /projects page below the heading */
   projectsPageSubtitle:
-    'A collection of projects I\'ve built — from enterprise applications to open-source tools.',
+    'A collection of projects I\'ve built - from enterprise applications to personal projects.',
 
   /**
    * Social links — displayed in the contact section and footer.
@@ -291,7 +303,7 @@ const portfolio = {
    */
   social: {
     /** Your email address */
-    email: 'b_hale@outlook.com.au',
+    email: 'b_halebiz@outlook.com',
     /** GitHub profile URL */
     github: 'https://github.com/Brandon-Hale',
     /** LinkedIn profile URL */

@@ -18,22 +18,22 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-4">
           {social.github && (
-            <a href={social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-body/50 hover:text-accent transition-colors">
+            <a href={social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" className="text-body/50 hover:text-accent transition-colors">
               <Github size={18} />
             </a>
           )}
           {social.linkedin && (
-            <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-body/50 hover:text-accent transition-colors">
+            <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="text-body/50 hover:text-accent transition-colors">
               <Linkedin size={18} />
             </a>
           )}
           {social.twitter && (
-            <a href={social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-body/50 hover:text-accent transition-colors">
+            <a href={social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" title="Twitter / X" className="text-body/50 hover:text-accent transition-colors">
               <Twitter size={18} />
             </a>
           )}
           {social.email && (
-            <a href={`mailto:${social.email}`} aria-label="Email" className="text-body/50 hover:text-accent transition-colors">
+            <a href={`mailto:${social.email}`} aria-label="Send email" title="Send email" className="text-body/50 hover:text-accent transition-colors">
               <Mail size={18} />
             </a>
           )}

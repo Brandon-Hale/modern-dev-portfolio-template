@@ -60,9 +60,9 @@ export default function Projects() {
       list = list.filter((p) => p.category === activeCategory)
     }
 
-    // Tag filter (additive — project must include ALL selected tags)
+    // Tag filter — show projects matching ANY of the selected tags
     if (activeTags.length > 0) {
-      list = list.filter((p) => activeTags.every((t) => p.tags.includes(t)))
+      list = list.filter((p) => activeTags.some((t) => p.tags.includes(t)))
     }
 
     // Sort: featured first, then by year descending

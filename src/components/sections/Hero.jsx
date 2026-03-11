@@ -69,6 +69,7 @@ export default function Hero() {
         <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-4">
           <button
             onClick={() => scrollTo('projects')}
+            title="Scroll to projects"
             className="relative overflow-hidden bg-accent text-white px-8 py-3.5 rounded-full font-medium text-sm hover:bg-accent-light transition-colors"
             style={{
               backgroundImage:
@@ -82,6 +83,7 @@ export default function Hero() {
 
           <button
             onClick={() => scrollTo('contact')}
+            title="Scroll to contact"
             className="border border-accent text-accent px-8 py-3.5 rounded-full font-medium text-sm hover:bg-accent hover:text-white transition-colors"
           >
             {heroCtaSecondary}

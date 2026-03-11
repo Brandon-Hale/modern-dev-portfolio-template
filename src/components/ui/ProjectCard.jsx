@@ -81,6 +81,7 @@ export default function ProjectCard({ project, onTagClick }) {
               href={github}
               target="_blank"
               rel="noopener noreferrer"
+              title={`View ${title} source code on GitHub`}
               className="flex items-center gap-1.5 text-sm text-body/60 hover:text-accent transition-colors"
             >
               <Github size={16} />
@@ -92,6 +93,7 @@ export default function ProjectCard({ project, onTagClick }) {
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
+              title={`View ${title} live demo`}
               className="flex items-center gap-1.5 text-sm text-body/60 hover:text-accent transition-colors"
             >
               <ExternalLink size={16} />

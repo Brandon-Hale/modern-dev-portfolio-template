@@ -61,6 +61,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="text-heading font-display text-xl font-semibold hover:text-accent transition-colors"
+          title={isHome ? name : 'Back to home'}
         >
           {isHome ? (
             name.split(' ')[0]

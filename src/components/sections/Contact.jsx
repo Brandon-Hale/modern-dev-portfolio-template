@@ -41,6 +41,7 @@ export default function Contact() {
             <motion.div variants={fadeUp} className="mb-10">
               <a
                 href={`mailto:${social.email}`}
+                title="Send email"
                 className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3.5 rounded-full font-medium text-sm hover:bg-accent-light transition-colors"
               >
                 <Mail size={18} />
@@ -56,6 +57,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                title="GitHub"
                 className="text-body/50 hover:text-accent transition-colors"
               >
                 <Github size={24} />
@@ -67,6 +69,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                title="LinkedIn"
                 className="text-body/50 hover:text-accent transition-colors"
               >
                 <Linkedin size={24} />
@@ -78,6 +81,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter / X"
+                title="Twitter / X"
                 className="text-body/50 hover:text-accent transition-colors"
               >
                 <Twitter size={24} />
