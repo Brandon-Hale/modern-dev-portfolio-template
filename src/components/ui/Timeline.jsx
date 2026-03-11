@@ -35,8 +35,8 @@ export default function Timeline({ items }) {
       <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gray-200" />
 
       <div className="space-y-12">
-        {items.map((item, i) => (
-          <motion.div key={i} variants={itemVariants} className="relative pl-12 md:pl-16">
+        {items.map((item) => (
+          <motion.div key={`${item.company}-${item.role}`} variants={itemVariants} className="relative pl-12 md:pl-16">
             {/* Dot marker */}
             <div className="absolute left-2.5 md:left-4.5 top-1.5 w-3 h-3 rounded-full bg-accent border-2 border-bg" />
 
