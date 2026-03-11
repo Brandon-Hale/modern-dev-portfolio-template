@@ -2,9 +2,12 @@
  * App — root component handling routing between Home and Projects pages.
  * Renders the shared Navbar, dot-grid background, cursor spotlight, and
  * custom cursor across both pages with page transition animations.
+ * Uses Lenis for buttery-smooth momentum scrolling.
  */
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import Lenis from 'lenis'
 import Navbar from './components/ui/Navbar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
@@ -60,10 +63,36 @@ function AnimatedRoutes() {
   )
 }
 
+function SmoothScroll() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      touchMultiplier: 2,
+    })
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+
+    return () => lenis.destroy()
+  }, [location.pathname])
+
+  return null
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <div className="dot-grid-bg min-h-screen relative">
+        <SmoothScroll />
         <CursorEffects />
         <Navbar />
         <AnimatedRoutes />

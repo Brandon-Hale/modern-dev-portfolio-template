@@ -10,13 +10,13 @@
 
 const portfolio = {
   /** Your full name — displayed in the hero and navbar */
-  name: 'Alex Chen',
+  name: 'Brandon Hale',
 
   /** Your professional title — shown below your name */
-  title: 'Full-Stack Developer',
+  title: 'Software Engineer',
 
   /** A short tagline — the hero subtitle */
-  tagline: 'I build polished web experiences with modern tools and clean code.',
+  tagline: 'Building full-stack applications, AI-driven solutions, and scalable enterprise systems from Perth, Australia.',
 
   /** The label for the primary CTA button in the hero */
   heroCtaPrimary: 'View My Work',
@@ -28,29 +28,33 @@ const portfolio = {
    * About section — a paragraph or two about yourself.
    * Supports multiple lines as a single string.
    */
-  bio: `I'm a full-stack developer with 6+ years of experience building web applications that people actually enjoy using. I specialize in React ecosystems, Node.js APIs, and cloud infrastructure — but I care most about writing code that's maintainable, accessible, and fast.\n\nWhen I'm not shipping features, you'll find me contributing to open-source projects, writing technical blog posts, or experimenting with new frameworks. I believe great software is built at the intersection of solid engineering and thoughtful design.`,
+  bio: `I'm a Software Engineer specialising in full-stack development, AI-driven solutions, and legacy system modernisation. I've delivered 5+ enterprise applications leveraging .NET, React, and Azure AI — with measurable performance gains across the board.\n\nI hold a Bachelor of Computing in Software Engineering from Curtin University, with concentrations in Distributed Systems, Cloud Computing, and Artificial Intelligence. I'm passionate about scalable architecture, database optimisation, and CI/CD automation — and I'm always looking for the next challenge to solve with clean, maintainable code.`,
 
   /**
    * Skills — displayed as tag pills in the About section.
    * List your core technologies and tools.
    */
   skills: [
-    'JavaScript',
-    'TypeScript',
+    'C#',
+    '.NET Core',
     'React',
-    'Next.js',
-    'Node.js',
-    'Express',
-    'PostgreSQL',
-    'MongoDB',
-    'Redis',
-    'GraphQL',
-    'Docker',
+    'TypeScript',
+    'JavaScript',
+    'SQL Server',
+    'Java',
+    'Python',
+    'Azure',
     'AWS',
-    'Tailwind CSS',
-    'Figma',
+    'Entity Framework',
+    'Power BI',
+    'Node.js',
+    'HTML/CSS',
     'Git',
     'CI/CD',
+    'OAuth 2.0',
+    'REST APIs',
+    'Docker',
+    'Agile/Scrum',
   ],
 
   /**
@@ -60,38 +64,40 @@ const portfolio = {
   experience: [
     {
       /** Your job title */
-      role: 'Senior Frontend Engineer',
+      role: 'Full Stack Software Engineer',
       /** Company name */
-      company: 'Streamline Labs',
+      company: 'Australian Institute of Management',
       /** Employment dates */
-      dates: 'Jan 2023 – Present',
+      dates: 'Jul 2024 – Present',
       /** Key accomplishments as bullet points */
       bullets: [
-        'Led migration of legacy Angular app to React + TypeScript, reducing bundle size by 42%.',
-        'Architected a component library used across 4 product teams, improving UI consistency.',
-        'Implemented real-time collaboration features using WebSockets and CRDTs.',
-        'Mentored 3 junior developers through structured code review and pair programming sessions.',
+        'Leveraged Azure AI Search and Azure OpenAI to implement RAG for intelligent document processing, enabling personalised customer feedback and actionable advice.',
+        'Architected and delivered 5+ mission-critical enterprise applications using C# .NET Core, TypeScript, and React, achieving 99.9% uptime and 40% reduction in system latency.',
+        'Designed and implemented secure RESTful APIs serving 10,000+ daily requests with seamless third-party integrations.',
+        'Built automated CI/CD pipelines using Azure DevOps, reducing deployment time by 80% and preventing recurring production errors.',
+        'Optimised database performance through advanced SQL Server indexing and schema redesign, improving query speed by 45%.',
       ],
     },
     {
-      role: 'Full-Stack Developer',
-      company: 'Vertex Digital',
-      dates: 'Mar 2020 – Dec 2022',
+      role: 'Student Software Engineer',
+      company: 'Thales',
+      dates: 'Feb 2024 – Nov 2024',
       bullets: [
-        'Built and maintained a multi-tenant SaaS platform serving 15,000+ active users.',
-        'Designed RESTful APIs with Node.js and Express, achieving 99.9% uptime.',
-        'Optimized PostgreSQL queries reducing average response time from 800ms to 120ms.',
-        'Integrated Stripe billing, handling $2M+ in annual recurring revenue.',
+        'Developed an AI-driven drone tracking system with machine learning algorithms to predict real-time locations from visual data.',
+        'Delivered production-ready modules in Java and Python through full SDLC participation in an Agile environment.',
+        'Collaborated with senior engineers on complex algorithm design and system integration challenges.',
       ],
     },
     {
-      role: 'Junior Developer',
-      company: 'BrightPath Agency',
-      dates: 'Jun 2018 – Feb 2020',
+      role: 'Software Engineer',
+      company: 'Intellect Systems',
+      dates: 'Nov 2023 – Jul 2024',
       bullets: [
-        'Delivered 20+ client websites using React, Gatsby, and WordPress.',
-        'Introduced automated testing with Jest, increasing code coverage from 15% to 78%.',
-        'Collaborated with designers to implement pixel-perfect, responsive UIs.',
+        'Facilitated technical workshops across 5+ departments, implementing automation solutions that reduced manual workflows by 30%.',
+        'Developed business intelligence tools using Power BI and .NET, enhancing data-driven decision-making capabilities.',
+        'Partnered with C-level executives to align development initiatives with strategic objectives and long-term technical roadmaps.',
+        'Automated critical business processes, developing email dispatch systems that reduced human error by 70% and saved 10+ hours weekly.',
+        'Built internal task tracking system from concept to deployment, achieving company-wide adoption.',
       ],
     },
   ],
@@ -112,159 +118,154 @@ const portfolio = {
    */
   projects: [
     {
-      title: 'CloudSync Dashboard',
+      title: 'Oscar',
       description:
-        'Real-time infrastructure monitoring dashboard with live metrics, alerting, and team collaboration features built for DevOps teams.',
+        'End-to-end enterprise platform for AIM WA — course scheduling, staff assignments, materials management, and automated stakeholder communications.',
       longDescription:
-        'A comprehensive monitoring solution that aggregates data from AWS, GCP, and Azure into a unified dashboard with customizable widgets and real-time alerting.',
+        'Engineered a scalable .NET backend with ASP.NET Core, integrating multiple SQL Server databases and Microsoft Graph API for authentication and automated communications. Features role-based security, automated document generation, and real-time visibility for operations and finance teams.',
       featured: true,
       category: 'work',
-      tags: ['React', 'TypeScript', 'D3.js', 'WebSocket', 'Node.js'],
+      tags: ['C#', '.NET 8', 'SQL Server', 'React', 'TypeScript', 'Microsoft Graph API'],
+      year: 2025,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'AI Document Processing (RAG)',
+      description:
+        'Intelligent document processing system using Azure AI Search and Azure OpenAI to deliver personalised customer feedback and actionable insights.',
+      longDescription:
+        'Built a Retrieval-Augmented Generation pipeline that processes enterprise documents, indexes them with Azure AI Search, and generates context-aware responses via Azure OpenAI for personalised customer advice.',
+      featured: true,
+      category: 'work',
+      tags: ['Azure AI Search', 'Azure OpenAI', 'C#', '.NET Core', 'RAG', 'TypeScript'],
       year: 2024,
-      github: 'https://github.com/alexchen/cloudsync-dashboard',
-      demo: 'https://cloudsync-demo.vercel.app',
+      github: 'https://github.com/Brandon-Hale',
     },
     {
-      title: 'Nexus UI',
+      title: 'AI Drone Tracking System',
       description:
-        'An open-source React component library with 40+ accessible, themeable components. Used by 200+ developers worldwide.',
+        'Machine learning-powered drone tracking system that predicts real-time locations from visual data for defence applications at Thales.',
       longDescription:
-        'Built from the ground up with accessibility and customization in mind. Every component passes WCAG 2.1 AA standards and supports dark mode out of the box.',
+        'Developed computer vision algorithms using Python and Java to process visual feeds and predict drone trajectories in real time. Built within an Agile development environment with full SDLC participation.',
       featured: true,
-      category: 'open-source',
-      tags: ['React', 'TypeScript', 'Storybook', 'CSS Modules', 'Jest'],
+      category: 'work',
+      tags: ['Python', 'Java', 'Machine Learning', 'Computer Vision', 'AI'],
       year: 2024,
-      github: 'https://github.com/alexchen/nexus-ui',
-      demo: 'https://nexus-ui.dev',
+      github: 'https://github.com/Brandon-Hale',
     },
     {
-      title: 'FinTrack',
+      title: 'Power BI Manufacturing Dashboard',
       description:
-        'Personal finance tracker with bank sync, budgeting tools, and spending analytics. Built as a privacy-first alternative to Mint.',
+        'Automated analytics dashboard integrating data from multiple sources, used by 20+ staff members and contributing to 15% improvement in safety compliance.',
       longDescription:
-        'Uses Plaid API for bank connections, with all data encrypted at rest. Features include custom budget categories, recurring transaction detection, and exportable reports.',
-      featured: true,
-      category: 'personal',
-      tags: ['Next.js', 'PostgreSQL', 'Plaid API', 'Chart.js', 'Tailwind CSS'],
-      year: 2023,
-      github: 'https://github.com/alexchen/fintrack',
-      demo: 'https://fintrack-app.vercel.app',
-    },
-    {
-      title: 'DevBlog Engine',
-      description:
-        'A Markdown-powered static blog engine with syntax highlighting, RSS feed generation, and automatic OG image creation.',
-      longDescription:
-        'Generates a fully static blog from Markdown files with frontmatter. Includes built-in search, tag filtering, and reading time estimation.',
-      featured: false,
-      category: 'open-source',
-      tags: ['Next.js', 'MDX', 'Tailwind CSS', 'Vercel'],
-      year: 2023,
-      github: 'https://github.com/alexchen/devblog-engine',
-    },
-    {
-      title: 'TaskFlow',
-      description:
-        'Kanban-style project management app with drag-and-drop, real-time sync, and team workspaces. Built for small agile teams.',
-      longDescription:
-        'Features include customizable board columns, swimlanes, file attachments, and activity feeds. Supports real-time collaboration via WebSocket connections.',
-      featured: false,
-      category: 'personal',
-      tags: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'DnD Kit'],
-      year: 2023,
-      github: 'https://github.com/alexchen/taskflow',
-      demo: 'https://taskflow-demo.vercel.app',
-    },
-    {
-      title: 'API Gateway Lite',
-      description:
-        'Lightweight API gateway with rate limiting, request validation, and automatic documentation generation from OpenAPI specs.',
-      longDescription:
-        'A zero-config API gateway designed for microservices architectures. Supports JWT auth, request/response transformation, and built-in health checks.',
-      featured: false,
-      category: 'open-source',
-      tags: ['Node.js', 'Express', 'Redis', 'Docker', 'OpenAPI'],
-      year: 2022,
-      github: 'https://github.com/alexchen/api-gateway-lite',
-    },
-    {
-      title: 'E-Commerce Platform',
-      description:
-        'Full-featured online store with product catalog, cart management, Stripe checkout, and admin dashboard for a boutique retailer.',
-      longDescription:
-        'End-to-end e-commerce solution including inventory management, order tracking, email notifications, and analytics dashboard.',
+        'Automated data pipeline integration from Replicon, Excel, and APIs using Power BI. Collaborated with executive leadership to align KPIs with strategic business objectives.',
       featured: false,
       category: 'work',
-      tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
-      year: 2022,
-      github: 'https://github.com/alexchen/ecommerce-platform',
+      tags: ['Power BI', 'Data Analytics', '.NET', 'Excel', 'SQL'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
     },
     {
-      title: 'Git Visualizer',
+      title: 'Enterprise CI/CD Pipeline',
       description:
-        'Interactive visualization tool that renders Git commit history as an animated graph. Helps teams understand branching strategies.',
+        'Automated deployment infrastructure using Azure DevOps that reduced deployment time by 80% and eliminated recurring production errors.',
       longDescription:
-        'Parses git log output and renders an interactive DAG using D3.js. Supports filtering by author, date range, and branch.',
-      featured: false,
-      category: 'personal',
-      tags: ['React', 'D3.js', 'Git', 'Electron'],
-      year: 2022,
-      github: 'https://github.com/alexchen/git-visualizer',
-    },
-    {
-      title: 'Healthcare Portal',
-      description:
-        'HIPAA-compliant patient portal with appointment scheduling, secure messaging, and medical records access for a clinic network.',
-      longDescription:
-        'Built with strict security requirements including end-to-end encryption, audit logging, and role-based access control.',
+        'Designed and implemented continuous integration and deployment pipelines for multiple enterprise applications, including automated testing, staging environments, and production rollout strategies.',
       featured: false,
       category: 'work',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'HIPAA'],
-      year: 2021,
-      github: 'https://github.com/alexchen/healthcare-portal',
+      tags: ['Azure DevOps', 'CI/CD', '.NET Core', 'Docker', 'YAML'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
     },
     {
-      title: 'CLI Task Runner',
+      title: 'Internal Task Tracker',
       description:
-        'A developer-friendly CLI tool for defining and running project tasks with dependency resolution and parallel execution.',
+        'Full-lifecycle task tracking system built from concept to deployment at Intellect Systems, achieving company-wide adoption across all departments.',
       longDescription:
-        'Reads task definitions from a YAML config file and builds a DAG for dependency resolution. Supports watch mode and incremental builds.',
+        'Designed and built a custom task management tool that streamlined project tracking and team coordination. Adopted company-wide as the primary workflow management solution.',
+      featured: false,
+      category: 'work',
+      tags: ['.NET', 'C#', 'SQL Server', 'HTML/CSS', 'JavaScript'],
+      year: 2023,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'Email Automation System',
+      description:
+        'Automated email dispatch system that reduced human error by 70% and saved 10+ hours of manual work weekly at Intellect Systems.',
+      longDescription:
+        'Built an automated business process solution handling templated email dispatch, scheduling, and tracking. Eliminated manual workflows and significantly reduced error rates.',
+      featured: false,
+      category: 'work',
+      tags: ['C#', '.NET', 'SMTP', 'SQL Server', 'Automation'],
+      year: 2023,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'Modern Dev Portfolio',
+      description:
+        'Open-source portfolio template built with React, Vite, Tailwind CSS, and Framer Motion. Designed as a fork-and-go template for developers.',
+      longDescription:
+        'A production-ready portfolio template featuring smooth scroll, dot-grid backgrounds, magnetic card tilt effects, and a dedicated filterable projects page. Fully configurable via a single config file.',
       featured: false,
       category: 'open-source',
-      tags: ['Node.js', 'TypeScript', 'CLI', 'YAML'],
-      year: 2021,
-      github: 'https://github.com/alexchen/cli-task-runner',
+      tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
+      year: 2025,
+      github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
     },
     {
-      title: 'Weather Dashboard',
+      title: 'Database Optimisation Suite',
       description:
-        'Beautiful weather app with 7-day forecasts, interactive radar maps, and severe weather alerts. Supports location search worldwide.',
+        'Advanced SQL Server indexing and schema redesign project that improved query speed by 45% and reduced report generation from minutes to seconds.',
       longDescription:
-        'Uses OpenWeatherMap API with client-side caching for performance. Features include hourly breakdowns, air quality index, and sunrise/sunset times.',
-      featured: false,
-      category: 'personal',
-      tags: ['React', 'OpenWeather API', 'Mapbox', 'CSS Modules'],
-      year: 2020,
-      github: 'https://github.com/alexchen/weather-dashboard',
-      demo: 'https://weather.alexchen.dev',
-    },
-    {
-      title: 'Form Builder',
-      description:
-        'Drag-and-drop form builder with conditional logic, validation rules, and submission analytics. White-labeled for agency clients.',
-      longDescription:
-        'Supports 15+ field types, multi-step forms, file uploads, and webhook integrations. Includes an embeddable widget for third-party sites.',
+        'Comprehensive database performance overhaul including index analysis, query plan optimisation, schema normalisation, and stored procedure refactoring for enterprise workloads.',
       featured: false,
       category: 'work',
-      tags: ['React', 'Node.js', 'MongoDB', 'DnD Kit', 'AWS S3'],
-      year: 2020,
-      github: 'https://github.com/alexchen/form-builder',
+      tags: ['SQL Server', 'Database Design', 'Performance', 'T-SQL'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'REST API Platform',
+      description:
+        'Secure RESTful API platform serving 10,000+ daily requests with OAuth 2.0 authentication and seamless third-party integrations.',
+      longDescription:
+        'Designed and implemented a scalable API layer with comprehensive authentication, rate limiting, and integration capabilities for enterprise systems.',
+      featured: false,
+      category: 'work',
+      tags: ['C#', '.NET Core', 'REST API', 'OAuth 2.0', 'Entity Framework'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'Workflow Automation Tools',
+      description:
+        'Suite of automation solutions deployed across 5+ departments at Intellect Systems, reducing manual workflows by 30% company-wide.',
+      longDescription:
+        'Developed and facilitated technical workshops delivering automation tools for business processes. Solutions adopted across multiple departments to streamline operations.',
+      featured: false,
+      category: 'work',
+      tags: ['.NET', 'Power BI', 'Automation', 'Python', 'SQL'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'ComSSA Community Platform',
+      description:
+        'Technical initiatives for the Curtin Computer Science Students Association, enhancing member engagement through innovative community solutions.',
+      longDescription:
+        'Contributed to platform development and event management for the student association, executing technical events and educational workshops for the computing community.',
+      featured: false,
+      category: 'personal',
+      tags: ['JavaScript', 'React', 'Community', 'Event Management'],
+      year: 2024,
+      github: 'https://github.com/Brandon-Hale',
     },
   ],
 
   /** Subtitle shown on the /projects page below the heading */
   projectsPageSubtitle:
-    'A collection of projects I\'ve built — from production apps to weekend experiments.',
+    'A collection of projects I\'ve built — from enterprise applications to open-source tools.',
 
   /**
    * Social links — displayed in the contact section and footer.
@@ -272,13 +273,13 @@ const portfolio = {
    */
   social: {
     /** Your email address */
-    email: 'hello@alexchen.dev',
+    email: 'b_hale@outlook.com.au',
     /** GitHub profile URL */
-    github: 'https://github.com/alexchen',
+    github: 'https://github.com/Brandon-Hale',
     /** LinkedIn profile URL */
-    linkedin: 'https://linkedin.com/in/alexchen',
-    /** Twitter / X profile URL */
-    twitter: 'https://x.com/alexchendev',
+    linkedin: 'https://linkedin.com/in/brandon-hale-',
+    /** Twitter / X profile URL — set to null if you don't use it */
+    twitter: null,
   },
 }
 
