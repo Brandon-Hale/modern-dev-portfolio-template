@@ -146,7 +146,7 @@ export default function Projects() {
             <button
               key={cat.key}
               onClick={() => setCategory(cat.key)}
-              className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+              className={`cursor-pointer px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                 activeCategory === cat.key
                   ? 'bg-accent text-white'
                   : 'text-body/60 hover:bg-gray-100'
@@ -176,7 +176,7 @@ export default function Projects() {
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="text-sm font-mono text-accent hover:underline"
+              className="cursor-pointer text-sm font-mono text-accent hover:underline"
             >
               Clear filters
             </button>
@@ -211,7 +211,7 @@ export default function Projects() {
             <p className="text-body/50 text-lg mb-4">No projects match your filters.</p>
             <button
               onClick={clearFilters}
-              className="text-accent font-medium hover:underline"
+              className="cursor-pointer text-accent font-medium hover:underline"
             >
               Clear all filters
             </button>
@@ -223,7 +223,7 @@ export default function Projects() {
           <div className="text-center mt-12">
             <button
               onClick={loadMore}
-              className="border border-accent text-accent px-8 py-3 rounded-full font-medium text-sm hover:bg-accent hover:text-white transition-colors"
+              className="cursor-pointer border border-accent text-accent px-8 py-3 rounded-full font-medium text-sm hover:bg-accent hover:text-white transition-colors"
             >
               Load More
             </button>

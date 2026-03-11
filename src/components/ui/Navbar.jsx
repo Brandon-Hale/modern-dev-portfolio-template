@@ -80,7 +80,7 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="relative px-4 py-2 text-sm font-medium text-body/70 hover:text-heading transition-colors"
+                className="cursor-pointer relative px-4 py-2 text-sm font-medium text-body/70 hover:text-heading transition-colors"
               >
                 {link.label}
                 {activeSection === link.id && (
@@ -98,7 +98,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         {isHome && (
           <button
-            className="md:hidden text-heading p-2"
+            className="cursor-pointer md:hidden text-heading p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -122,7 +122,7 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className={`text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                  className={`cursor-pointer text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     activeSection === link.id
                       ? 'bg-accent/10 text-accent'
                       : 'text-body/70 hover:bg-gray-100'
