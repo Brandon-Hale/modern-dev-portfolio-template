@@ -15,7 +15,11 @@ A clean, animated developer portfolio template built with React, Vite, Tailwind 
 
 - **Two-page layout** — single-page home with smooth scroll + dedicated projects page with filtering
 - **One config file** — all personal content lives in `src/config/portfolio.config.js`
-- **12+ sample projects** with category tabs, tech tag filters, and load-more pagination
+- **Education & certifications** — dedicated section with linked institutions
+- **Career progression** — group multiple roles under one company to show promotions
+- **Company links** — experience timeline entries can link to company websites
+- **Private project support** — projects without a GitHub link show a lock icon with "Private" label
+- **Scrolling tech tags** — skills marquee with infinite horizontal scroll
 - **Shareable filter URLs** — filtered project views use query params (`?category=work&tags=React`)
 - **Framer Motion animations** — staggered reveals, page transitions, card tilts, AnimatePresence
 - **Dot-grid background** with mouse-following spotlight effect
@@ -56,11 +60,50 @@ This is the only file you need to edit. It exports a single object with every pi
 | `heroCtaPrimary` | `string` | Label for the primary CTA button |
 | `heroCtaSecondary` | `string` | Label for the secondary CTA button |
 | `bio` | `string` | About section paragraph(s). Use `\n` for line breaks |
-| `skills` | `string[]` | Tech/skill tags shown in the About section |
-| `experience` | `object[]` | Work history entries with `role`, `company`, `dates`, `bullets` |
+| `skills` | `string[]` | Tech/skill tags shown as a scrolling marquee in the About section |
+| `education` | `object[]` | Education entries with `degree`, `institution`, `url`, `dates`, `details` |
+| `certifications` | `object[]` | Certification entries with `name`, `issuer`, `date` |
+| `experience` | `object[]` | Work history entries (see experience shape below) |
 | `projects` | `object[]` | All projects (see project shape below) |
 | `projectsPageSubtitle` | `string` | Subtitle on the /projects page |
 | `social` | `object` | Links: `email`, `github`, `linkedin`, `twitter` |
+
+#### Experience shape
+
+Experience entries support two formats — single role or grouped roles (for promotions):
+
+```js
+// Single role
+{
+  role: "Software Engineer",
+  company: "Acme Corp",
+  url: "https://acme.com",         // Optional — links the company name
+  dates: "Jan 2023 – Present",
+  bullets: [
+    "Built features...",
+    "Improved performance...",
+  ],
+}
+
+// Grouped roles (career progression at the same company)
+{
+  company: "Acme Corp",
+  url: "https://acme.com",         // Optional
+  dates: "Jan 2022 – Present",     // Overall tenure
+  roles: [
+    {
+      role: "Senior Engineer",
+      dates: "Jan 2023 – Present",
+      bullets: ["Led the team...", "Architected..."],
+    },
+    {
+      role: "Junior Engineer",
+      dates: "Jan 2022 – Jan 2023",
+      bullets: ["Built features...", "Wrote tests..."],
+    },
+  ],
+}
+```
 
 #### Project shape
 
@@ -73,8 +116,8 @@ This is the only file you need to edit. It exports a single object with every pi
   category: "open-source",      // "work" | "personal" | "open-source"
   tags: ["React", "Node.js"],   // Tech stack tags
   year: 2024,                   // Year built
-  github: "https://github.com/...",
-  demo: "https://...",          // Optional live demo URL
+  github: "https://github.com/...",  // Optional — omit to show "Private" badge
+  demo: "https://...",          // Optional — link to live site or company website
 }
 ```
 
@@ -99,11 +142,11 @@ src/
     portfolio.config.js   ← All personal content
     theme.config.js       ← Colors, fonts, dot grid settings
   components/
-    sections/             ← Hero, About, Experience, ProjectsPreview, Contact
-    ui/                   ← Navbar, Card, Tag, Timeline, Footer, FilterBar, ProjectCard, Icons
+    sections/             ← Hero, About, Education, Experience, ProjectsPreview, Contact
+    ui/                   ← Navbar, Card, Tag, TagMarquee, Timeline, Footer, FilterBar, ProjectCard, Icons
   hooks/
     useMousePosition.js   ← Cursor tracking hook
-    useActiveSection.js   ← Intersection Observer for nav highlighting
+    useActiveSection.js   ← Scroll-based nav highlighting
   pages/
     Home.jsx              ← Main single-page portfolio
     Projects.jsx          ← Dedicated projects page with filtering
@@ -118,16 +161,6 @@ src/
 |---|---|---|
 | `/` | Home | Single-page portfolio with smooth-scrolling sections |
 | `/projects` | Projects | Full project listing with category tabs, tag filters, and pagination |
-
-## Deployment
-
-This is a fully static site — deploy anywhere that serves static files:
-
-- **Vercel**: `npm run build` → deploy `dist/`
-- **Netlify**: Set build command to `npm run build`, publish directory to `dist/`
-- **GitHub Pages**: Use a GitHub Action to build and deploy
-
-> For client-side routing to work on refresh, configure your host to redirect all paths to `index.html`.
 
 ## Contributing
 

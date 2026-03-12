@@ -96,6 +96,13 @@ const portfolio = {
   /**
    * Experience — your work history, displayed as a vertical timeline.
    * Listed in reverse chronological order (most recent first).
+   *
+   * Each entry can be a single role (role, company, dates, bullets)
+   * or grouped roles for career progression (company, dates, roles[]).
+   *
+   * Optional fields:
+   * - url: links the company name to their website
+   * - roles: array of { role, dates, bullets } for showing promotions
    */
   experience: [
     {
