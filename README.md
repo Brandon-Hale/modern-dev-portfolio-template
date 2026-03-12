@@ -7,7 +7,7 @@
 
 A clean, animated developer portfolio template built with React, Vite, Tailwind CSS, and Framer Motion. Fork it, edit one config file, and deploy your own portfolio in minutes.
 
-**[Live Demo →](#)** _(deploy your own to add a link here)_
+**[Live Demo →](https://brandonhaledev.com/)**
 
 ---
 
