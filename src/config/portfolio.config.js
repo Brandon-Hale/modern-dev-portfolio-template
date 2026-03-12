@@ -132,7 +132,7 @@ const portfolio = {
     {
       role: 'Committee Member',
       company: 'ComSSA - Curtin Computer Science Students Association',
-      url: 'https://comssa.curtin.edu.au',
+      url: 'https://comssa.org.au/',
       dates: 'Jan 2024 – Jul 2024',
       bullets: [
         'Spearheaded technical initiatives for community platform development, enhancing member engagement through innovative solutions.',
@@ -211,17 +211,6 @@ const portfolio = {
       year: 2026
     },
     {
-      title: 'AI Drone Tracking System',
-      description:
-        'Machine learning-based drone tracking platform that predicts probable operator locations using crowd-reported sightings and real-time analysis.',
-      longDescription:
-        'Developed a defence-focused drone tracking application with an interactive GUI that allows users to select drone types and submit location sightings. These observations are processed through machine learning models to estimate probable operator locations and movement patterns. Implemented data processing and prediction logic using Python and Java, contributing across the full software development lifecycle within an Agile team environment.',
-      featured: true,
-      category: 'work',
-      tags: ['Python', 'Java', 'Machine Learning', 'Computer Vision', 'AI'],
-      year: 2024
-    },
-    {
       title: 'Modern Dev Portfolio',
       description:
         'Open-source portfolio template built with React, Vite, Tailwind CSS, and Framer Motion. Designed as a fork-and-go template for developers.',
@@ -232,6 +221,17 @@ const portfolio = {
       tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       year: 2025,
       github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
+    },
+    {
+      title: 'AI Drone Tracking System',
+      description:
+        'Machine learning-based drone tracking platform that predicts probable operator locations using crowd-reported sightings and real-time analysis.',
+      longDescription:
+        'Developed a defence-focused drone tracking application with an interactive GUI that allows users to select drone types and submit location sightings. These observations are processed through machine learning models to estimate probable operator locations and movement patterns. Implemented data processing and prediction logic using Python and Java, contributing across the full software development lifecycle within an Agile team environment.',
+      featured: true,
+      category: 'work',
+      tags: ['Python', 'Java', 'Machine Learning', 'Computer Vision', 'AI'],
+      year: 2024
     },
     {
       title: 'Oscar',
@@ -265,7 +265,7 @@ const portfolio = {
       category: 'personal',
       tags: ['JavaScript', 'React', 'Community', 'Event Management'],
       year: 2024,
-      github: 'https://github.com/Brandon-Hale',
+      demo: 'https://comssa.org.au/',
     },
     {
       title: 'Workflow Automation Tools',

@@ -15,7 +15,7 @@ const fadeUp = {
 }
 
 export default function ProjectsPreview() {
-  const featured = portfolio.projects.filter((p) => p.featured).slice(0, 3)
+  const featured = portfolio.projects.filter((p) => p.featured).slice(0, 4)
 
   return (
     <section id="projects" className="py-24 px-6">
