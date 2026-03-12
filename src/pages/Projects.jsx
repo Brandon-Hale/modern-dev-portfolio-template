@@ -94,8 +94,8 @@ export default function Projects() {
   }
 
   return (
-    <main className="pt-24 pb-8 px-6">
-      <div className="max-w-6xl mx-auto">
+    <main className="pt-24 pb-8 px-6 flex-1 flex flex-col">
+      <div className="max-w-6xl mx-auto flex-1 w-full min-w-0">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -165,7 +165,7 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                className={project.featured ? 'md:col-span-2 lg:col-span-2' : ''}
+                className={`min-w-0 ${project.featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
               >
                 <ProjectCard project={project} />
               </motion.div>
@@ -193,7 +193,9 @@ export default function Projects() {
         )}
       </div>
 
-      <Footer />
+      <div className="mt-auto">
+        <Footer />
+      </div>
     </main>
   )
 }

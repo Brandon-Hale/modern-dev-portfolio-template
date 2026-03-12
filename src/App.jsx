@@ -41,6 +41,7 @@ function AnimatedRoutes() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.25 }}
+        className="flex-1 flex flex-col"
       >
         <Routes location={location}>
           <Route path="/" element={<Home />} />
@@ -80,7 +81,7 @@ function SmoothScroll() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="dot-grid-bg min-h-screen relative">
+      <div className="dot-grid-bg min-h-screen relative flex flex-col overflow-x-hidden">
         <SmoothScroll />
         <DotGridCanvas />
         <CursorDot />
