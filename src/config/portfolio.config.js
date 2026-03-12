@@ -144,7 +144,7 @@ const portfolio = {
     },
     {
       company: 'Intellect Systems',
-      url: 'https://www.intellectsystems.com',
+      url: 'https://www.intellectsystems.com.au',
       dates: 'Nov 2023 – Jul 2024',
       roles: [
         {
