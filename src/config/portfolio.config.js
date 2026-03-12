@@ -28,8 +28,8 @@ const portfolio = {
    * About section — a paragraph or two about yourself.
    * Supports multiple lines as a single string.
    */
-  bio: `I'm a Software Engineer specialising in full-stack development, AI-driven solutions, and legacy system modernisation. I've delivered 5+ enterprise applications leveraging .NET, React, and Azure AI - with measurable performance gains across the board.\n\nI hold a Bachelor of Computing in Software Engineering from Curtin University, with concentrations in Distributed Systems, Cloud Computing, and Artificial Intelligence. I'm passionate about scalable architecture, database optimisation, and CI/CD automation - and I'm always looking for the next challenge to solve with clean, maintainable code.`,
-
+  bio: `I'm a Software Engineer specialising in full-stack development, cloud-native solutions, and AI-powered applications. Experienced in C# .NET, React, TypeScript, and Azure, I have delivered 5+ enterprise platforms modernising legacy systems, optimising databases, and implementing AI-driven features with measurable business impact. Proficient in infrastructure-as-a-service (IaaS), RAG workflows, CI/CD automation, and designing clean, maintainable architectures. Passionate about solving complex challenges and leveraging emerging technologies like Claude Code to accelerate development and build scalable, high-performance software solutions.`,
+  
   /**
    * Skills — displayed as tag pills in the About section.
    * List your core technologies and tools.
