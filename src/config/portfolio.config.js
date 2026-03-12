@@ -37,20 +37,26 @@ const portfolio = {
   skills: [
     'C#',
     '.NET',
+    'ASP.NET Core',
+    'Entity Framework Core',
     'React',
     'TypeScript',
     'JavaScript',
     'SQL',
+    'SQL Server',
     'Python',
     'Azure',
+    'Azure AI Foundry',
     'AWS',
     'REST APIs',
     'OAuth 2.0',
     'CI/CD',
     'Git',
     'AI & LLM Integration (OpenAI, Claude)',
+    'RAG Systems',
     'Agentic Systems',
     'Node.js',
+    'Webpack',
     'HTML/CSS',
     'Power BI',
     'Agile/Scrum'
@@ -65,7 +71,8 @@ const portfolio = {
       /** Your job title */
       role: 'Associate Software Engineer',
       /** Company name */
-      company: 'RAC WA',
+      company: 'RAC',
+      url: 'https://rac.com.au',
       /** Employment dates */
       dates: 'Apr 2026 – Present',
       /** Key accomplishments as bullet points */
@@ -75,7 +82,8 @@ const portfolio = {
     },
     {
       role: 'Full Stack Software Engineer',
-      company: 'Australian Institute of Management',
+      company: 'Australian Institute of Management WA',
+      url: 'https://aimwa.com',
       dates: 'Jul 2024 – Apr 2026',
       bullets: [
         'Leveraged Azure AI Search and Azure OpenAI to implement RAG for intelligent document processing, enabling personalised customer feedback and actionable advice.',
@@ -88,6 +96,7 @@ const portfolio = {
     {
       role: 'Student Software Engineer',
       company: 'Thales',
+      url: 'https://www.thalesgroup.com',
       dates: 'Feb 2024 – Nov 2024',
       bullets: [
         'Developed an AI-driven drone tracking system with machine learning algorithms to predict real-time locations from visual data.',
@@ -96,20 +105,34 @@ const portfolio = {
       ],
     },
     {
-      role: 'Undergraduate Software Engineer',
       company: 'Intellect Systems',
-      dates: 'Oct 2023 – Jul 2024',
-      bullets: [
-        'Facilitated technical workshops across 5+ departments, implementing automation solutions that reduced manual workflows by 30%.',
-        'Developed business intelligence tools using Power BI and .NET, enhancing data-driven decision-making capabilities.',
-        'Partnered with C-level executives to align development initiatives with strategic objectives and long-term technical roadmaps.',
-        'Automated critical business processes, developing email dispatch systems that reduced human error by 70% and saved 10+ hours weekly.',
-        'Built internal task tracking system from concept to deployment, achieving company-wide adoption.',
+      url: 'https://www.intellectsystems.com',
+      dates: 'Nov 2023 – Jul 2024',
+      roles: [
+        {
+          role: 'Software Engineer Undergraduate',
+          dates: 'Jan 2024 – Jul 2024',
+          bullets: [
+            'Facilitated technical workshops across 5+ departments, implementing automation solutions that reduced manual workflows by 30%.',
+            'Developed business intelligence tools using Power BI and .NET, enhancing data-driven decision-making capabilities.',
+            'Partnered with C-level executives to align development initiatives with strategic objectives and long-term technical roadmaps.',
+            'Delivered proof-of-concept solutions adopted company-wide, bridging technical design with business priorities.',
+          ],
+        },
+        {
+          role: 'Software Engineer Intern',
+          dates: 'Nov 2023 – Jan 2024',
+          bullets: [
+            'Automated critical business processes, developing email dispatch systems that reduced human error by 70% and saved 10+ hours weekly.',
+            'Built internal task tracking system from concept to deployment, achieving company-wide adoption.',
+          ],
+        },
       ],
     },
     {
       role: 'Committee Member',
       company: 'ComSSA - Curtin Computer Science Students Association',
+      url: 'https://comssa.curtin.edu.au',
       dates: 'Jan 2024 – Jul 2024',
       bullets: [
         'Spearheaded technical initiatives for community platform development, enhancing member engagement through innovative solutions.',
@@ -143,88 +166,60 @@ const portfolio = {
    */
   projects: [
     {
-      title: 'Oscar',
+      title: 'Mockingbird',
       description:
-        'End-to-end enterprise platform for AIM WA — course scheduling, staff assignments, materials management, and automated stakeholder communications.',
+        'AI-powered website usability testing platform that simulates real users, providing video replays, heatmaps, and actionable UX recommendations.',
       longDescription:
-        'Engineered a scalable .NET backend with ASP.NET Core, integrating multiple SQL Server databases and Microsoft Graph API for authentication and automated communications. Features role-based security, automated document generation, and real-time visibility for operations and finance teams.',
+        'Developed an AI-driven platform where users submit a URL and AI personas (Tech Novice, Average User, Power User) navigate the site. The system records videos, screenshots, and findings, analyses them with Claude API in a RAG workflow, and generates prioritized UX recommendations. Built with Next.js, TypeScript, Tailwind CSS, D3.js, Playwright, Supabase, and Prisma to enable fast, scalable testing for SMBs and enterprises.',
       featured: true,
       category: 'work',
-      tags: ['C#', '.NET 8', 'SQL Server', 'React', 'TypeScript', 'Microsoft Graph API'],
+      tags: [
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'D3.js',
+        'Playwright',
+        'Supabase',
+        'Prisma',
+        'Claude API',
+        'RAG',
+        'AI',
+        'UX',
+        'Automation'
+      ],
       year: 2025,
-      github: 'https://github.com/Brandon-Hale',
+      demo: 'https://mockingbirdai.com.au',
     },
     {
-      title: 'AI Document Processing (RAG)',
+      title: 'AI Survey Insights Platform',
       description:
-        'Intelligent document processing system using Azure AI Search and Azure OpenAI to deliver personalised customer feedback and actionable insights.',
+        'Adaptive AI-powered survey platform that generates personalised learning recommendations using Azure OpenAI and enterprise knowledge search.',
       longDescription:
-        'Built a Retrieval-Augmented Generation pipeline that processes enterprise documents, indexes them with Azure AI Search, and generates context-aware responses via Azure OpenAI for personalised customer advice.',
+        'Designed and developed an intelligent survey system that dynamically generates follow-up questions using Azure OpenAI to refine user responses and reduce unnecessary input. Responses are analysed against AIM WA’s indexed organisational knowledge via Azure AI Search, enabling a Retrieval-Augmented Generation pipeline that produces personalised reports and course recommendations tailored to each participant.',
       featured: true,
       category: 'work',
-      tags: ['Azure AI Search', 'Azure OpenAI', 'C#', '.NET Core', 'RAG', 'TypeScript'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
+      tags: [
+        'Azure OpenAI',
+        'Azure AI Search',
+        'C#',
+        'ASP.NET Core',
+        'Entity Framework Core',
+        'RAG',
+        'TypeScript',
+        'SQL Server'
+      ],
+      year: 2026
     },
     {
       title: 'AI Drone Tracking System',
       description:
-        'Machine learning-powered drone tracking system that predicts real-time locations from visual data for defence applications at Thales.',
+        'Machine learning-based drone tracking platform that predicts probable operator locations using crowd-reported sightings and real-time analysis.',
       longDescription:
-        'Developed computer vision algorithms using Python and Java to process visual feeds and predict drone trajectories in real time. Built within an Agile development environment with full SDLC participation.',
+        'Developed a defence-focused drone tracking application with an interactive GUI that allows users to select drone types and submit location sightings. These observations are processed through machine learning models to estimate probable operator locations and movement patterns. Implemented data processing and prediction logic using Python and Java, contributing across the full software development lifecycle within an Agile team environment.',
       featured: true,
       category: 'work',
       tags: ['Python', 'Java', 'Machine Learning', 'Computer Vision', 'AI'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
-    },
-    {
-      title: 'Power BI Manufacturing Dashboard',
-      description:
-        'Automated analytics dashboard integrating data from multiple sources, used by 20+ staff members and contributing to 15% improvement in safety compliance.',
-      longDescription:
-        'Automated data pipeline integration from Replicon, Excel, and APIs using Power BI. Collaborated with executive leadership to align KPIs with strategic business objectives.',
-      featured: false,
-      category: 'work',
-      tags: ['Power BI', 'Data Analytics', '.NET', 'Excel', 'SQL'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
-    },
-    {
-      title: 'Enterprise CI/CD Pipeline',
-      description:
-        'Automated deployment infrastructure using Azure DevOps that reduced deployment time by 80% and eliminated recurring production errors.',
-      longDescription:
-        'Designed and implemented continuous integration and deployment pipelines for multiple enterprise applications, including automated testing, staging environments, and production rollout strategies.',
-      featured: false,
-      category: 'work',
-      tags: ['Azure DevOps', 'CI/CD', '.NET Core', 'Docker', 'YAML'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
-    },
-    {
-      title: 'Internal Task Tracker',
-      description:
-        'Full-lifecycle task tracking system built from concept to deployment at Intellect Systems, achieving company-wide adoption across all departments.',
-      longDescription:
-        'Designed and built a custom task management tool that streamlined project tracking and team coordination. Adopted company-wide as the primary workflow management solution.',
-      featured: false,
-      category: 'work',
-      tags: ['.NET', 'C#', 'SQL Server', 'HTML/CSS', 'JavaScript'],
-      year: 2023,
-      github: 'https://github.com/Brandon-Hale',
-    },
-    {
-      title: 'Email Automation System',
-      description:
-        'Automated email dispatch system that reduced human error by 70% and saved 10+ hours of manual work weekly at Intellect Systems.',
-      longDescription:
-        'Built an automated business process solution handling templated email dispatch, scheduling, and tracking. Eliminated manual workflows and significantly reduced error rates.',
-      featured: false,
-      category: 'work',
-      tags: ['C#', '.NET', 'SMTP', 'SQL Server', 'Automation'],
-      year: 2023,
-      github: 'https://github.com/Brandon-Hale',
+      year: 2024
     },
     {
       title: 'Modern Dev Portfolio',
@@ -232,47 +227,33 @@ const portfolio = {
         'Open-source portfolio template built with React, Vite, Tailwind CSS, and Framer Motion. Designed as a fork-and-go template for developers.',
       longDescription:
         'A production-ready portfolio template featuring smooth scroll, dot-grid backgrounds, magnetic card tilt effects, and a dedicated filterable projects page. Fully configurable via a single config file.',
-      featured: false,
+      featured: true,
       category: 'open-source',
       tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       year: 2025,
       github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
     },
     {
-      title: 'Database Optimisation Suite',
+      title: 'Oscar',
       description:
-        'Advanced SQL Server indexing and schema redesign project that improved query speed by 45% and reduced report generation from minutes to seconds.',
+        'End-to-end internal platform for AIM WA - course scheduling, staff assignments, materials management, and automated stakeholder communications.',
       longDescription:
-        'Comprehensive database performance overhaul including index analysis, query plan optimisation, schema normalisation, and stored procedure refactoring for enterprise workloads.',
+        'Engineered a scalable .NET backend with ASP.NET Core, integrating multiple SQL Server databases and Microsoft Graph API for authentication and automated communications. Features role-based security, automated document generation, and real-time visibility for operations and finance teams.',
       featured: false,
       category: 'work',
-      tags: ['SQL Server', 'Database Design', 'Performance', 'T-SQL'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
+      tags: ['C#', '.NET', 'SQL Server', 'React', 'TypeScript', 'Microsoft Graph'],
+      year: 2025,
     },
     {
-      title: 'REST API Platform',
+      title: 'Power BI Manufacturing Dashboard',
       description:
-        'Secure RESTful API platform serving 10,000+ daily requests with OAuth 2.0 authentication and seamless third-party integrations.',
+        'Automated analytics dashboard integrating data from multiple sources, empowering stakeholders to optimise projects and improve safety compliance by 15%.',
       longDescription:
-        'Designed and implemented a scalable API layer with comprehensive authentication, rate limiting, and integration capabilities for enterprise systems.',
+        'Developed a Power BI dashboard that consolidates manufacturing data from Replicon, Excel, and APIs, providing real-time insights into project timelines, budget tracking, and resource availability. Enabled key stakeholders to make informed decisions, aligning operational metrics with strategic business objectives.',
       featured: false,
       category: 'work',
-      tags: ['C#', '.NET Core', 'REST API', 'OAuth 2.0', 'Entity Framework'],
+      tags: ['Power BI', 'Data Analytics', '.NET', 'Excel', 'SQL'],
       year: 2024,
-      github: 'https://github.com/Brandon-Hale',
-    },
-    {
-      title: 'Workflow Automation Tools',
-      description:
-        'Suite of automation solutions deployed across 5+ departments at Intellect Systems, reducing manual workflows by 30% company-wide.',
-      longDescription:
-        'Developed and facilitated technical workshops delivering automation tools for business processes. Solutions adopted across multiple departments to streamline operations.',
-      featured: false,
-      category: 'work',
-      tags: ['.NET', 'Power BI', 'Automation', 'Python', 'SQL'],
-      year: 2024,
-      github: 'https://github.com/Brandon-Hale',
     },
     {
       title: 'ComSSA Community Platform',
@@ -285,6 +266,17 @@ const portfolio = {
       tags: ['JavaScript', 'React', 'Community', 'Event Management'],
       year: 2024,
       github: 'https://github.com/Brandon-Hale',
+    },
+    {
+      title: 'Workflow Automation Tools',
+      description:
+        'Document and workflow automation system deployed across 5+ departments at Intellect Systems, reducing manual tasks and email processing times by over 30%.',
+      longDescription:
+        'Researched, designed, and implemented a document automation platform that routes documents between stakeholders, ensuring accountability, audit tracking, and faster approvals. Delivered technical workshops to train staff on the tools, which were adopted company-wide to streamline workflows, reduce manual workloads, and improve operational efficiency.',
+      featured: false,
+      category: 'work',
+      tags: ['Automation', 'Python', 'SQL', 'Adobe'],
+      year: 2023,
     },
   ],
 

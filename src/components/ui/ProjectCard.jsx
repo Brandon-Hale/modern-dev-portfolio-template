@@ -10,7 +10,7 @@
  */
 import Card from './Card'
 import Tag from './Tag'
-import { Github, ExternalLink } from './Icons'
+import { Github, ExternalLink, Lock } from './Icons'
 
 /**
  * Generates a deterministic gradient from a project title.
@@ -76,7 +76,7 @@ export default function ProjectCard({ project, onTagClick }) {
 
         {/* Action links */}
         <div className="flex items-center gap-3 mt-2 pt-3 border-t border-gray-100">
-          {github && (
+          {github ? (
             <a
               href={github}
               target="_blank"
@@ -87,6 +87,11 @@ export default function ProjectCard({ project, onTagClick }) {
               <Github size={16} />
               <span className="font-mono text-xs">Code</span>
             </a>
+          ) : (
+            <span className="flex items-center gap-1.5 text-sm text-body/40" title="Source code is private">
+              <Lock size={14} />
+              <span className="font-mono text-xs">Private</span>
+            </span>
           )}
           {demo && (
             <a
