@@ -23,6 +23,7 @@ import { ArrowLeft, Menu, X } from './Icons'
 
 const NAV_LINKS = [
   { id: 'about', label: 'About' },
+  { id: 'education', label: 'Education' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
@@ -44,8 +45,10 @@ export default function Navbar() {
 
   const scrollToSection = (id) => {
     setMobileOpen(false)
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    setTimeout(() => {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }, 300)
   }
 
   return (
@@ -60,11 +63,11 @@ export default function Navbar() {
         {/* Logo / Name */}
         <Link
           to="/"
-          className="text-heading font-display text-xl font-semibold hover:text-accent transition-colors"
+          className="text-heading font-display text-xl font-semibold tracking-wide hover:text-accent transition-colors"
           title={isHome ? name : 'Back to home'}
         >
           {isHome ? (
-            name.split(' ')[0]
+            name
           ) : (
             <span className="flex items-center gap-2">
               <ArrowLeft size={16} />

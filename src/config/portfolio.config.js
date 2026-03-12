@@ -63,6 +63,37 @@ const portfolio = {
   ],
 
   /**
+   * Education — displayed between About and Experience.
+   * Each entry has a degree, institution, dates, and optional details.
+   */
+  education: [
+    {
+      degree: 'Bachelor of Science (Honours) - Computer Science',
+      institution: 'Curtin University',
+      url: 'https://www.curtin.edu.au',
+      dates: 'Expected Graduation Jun 2027',
+      details: [],
+    },
+    {
+      degree: 'Bachelor of Computing - Software Engineering',
+      institution: 'Curtin University',
+      url: 'https://www.curtin.edu.au',
+      dates: 'Completed Nov 2025',
+      details: [],
+    },
+  ],
+
+  /**
+   * Certifications — displayed below education.
+   * Each entry has a name, issuer, and date.
+   */
+  certifications: [
+    { name: 'AWS Certified: Cloud Practitioner', issuer: 'Amazon Web Services', date: 'Nov 2025' },
+    { name: 'Microsoft Certified: Azure Fundamentals', issuer: 'Microsoft', date: 'Oct 2025' },
+    { name: 'First Aid Certificate', issuer: 'St John Ambulance', date: 'Aug 2025' },
+  ],
+
+  /**
    * Experience — your work history, displayed as a vertical timeline.
    * Listed in reverse chronological order (most recent first).
    */
