@@ -6,7 +6,7 @@
  */
 import { motion } from 'framer-motion'
 import portfolio from '../../config/portfolio.config'
-import Tag from '../ui/Tag'
+import TagMarquee from '../ui/TagMarquee'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -44,11 +44,7 @@ export default function About() {
             <h3 className="text-heading font-medium text-sm font-mono mb-4 uppercase tracking-wider">
               Technologies I work with
             </h3>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <Tag key={skill} label={skill} />
-              ))}
-            </div>
+            <TagMarquee tags={skills} />
           </motion.div>
         </motion.div>
       </div>

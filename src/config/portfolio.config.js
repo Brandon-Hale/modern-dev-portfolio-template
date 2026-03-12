@@ -35,26 +35,25 @@ const portfolio = {
    * List your core technologies and tools.
    */
   skills: [
-    'Azure',
-    'AWS',
-    'OpenAI',
-    'Claude API',
     'C#',
-    '.NET Core',
+    '.NET',
     'React',
     'TypeScript',
     'JavaScript',
-    'SQL Server',
-    'Java',
+    'SQL',
     'Python',
-    'Power BI',
+    'Azure',
+    'AWS',
+    'REST APIs',
+    'OAuth 2.0',
+    'CI/CD',
+    'Git',
+    'AI & LLM Integration (OpenAI, Claude)',
+    'Agentic Systems',
     'Node.js',
     'HTML/CSS',
-    'Git',
-    'CI/CD',
-    'OAuth 2.0',
-    'REST APIs',
-    'Agile/Scrum',
+    'Power BI',
+    'Agile/Scrum'
   ],
 
   /**
@@ -71,17 +70,13 @@ const portfolio = {
       dates: 'Apr 2026 – Present',
       /** Key accomplishments as bullet points */
       bullets: [
-        'Starting in 3 weeks.'
+        'Starting next week.'
       ],
     },
     {
-      /** Your job title */
       role: 'Full Stack Software Engineer',
-      /** Company name */
       company: 'Australian Institute of Management',
-      /** Employment dates */
       dates: 'Jul 2024 – Apr 2026',
-      /** Key accomplishments as bullet points */
       bullets: [
         'Leveraged Azure AI Search and Azure OpenAI to implement RAG for intelligent document processing, enabling personalised customer feedback and actionable advice.',
         'Architected and delivered 5+ mission-critical enterprise applications using C# .NET Core, TypeScript, and React, achieving 99.9% uptime and 40% reduction in system latency.',
