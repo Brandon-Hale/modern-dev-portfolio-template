@@ -259,6 +259,7 @@ const portfolio = {
       tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
       year: 2025,
       github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
+      demo: 'https://brandonhaledev.com/',
     },
     {
       title: 'AI Drone Tracking System',
