@@ -76,6 +76,13 @@ body {
   border-radius: 3px;
 }
 
+/* Hide default cursor on non-touch devices */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
 /* Custom cursor dot */
 .custom-cursor {
   pointer-events: none;

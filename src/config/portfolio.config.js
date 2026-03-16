@@ -68,13 +68,6 @@ const portfolio = {
    */
   education: [
     {
-      degree: 'Bachelor of Science (Honours) - Computer Science',
-      institution: 'Curtin University',
-      url: 'https://www.curtin.edu.au',
-      dates: 'Expected Graduation Jun 2027',
-      details: [],
-    },
-    {
       degree: 'Bachelor of Computing - Software Engineering',
       institution: 'Curtin University',
       url: 'https://www.curtin.edu.au',
@@ -115,7 +108,16 @@ const portfolio = {
       dates: 'Apr 2026 – Present',
       /** Key accomplishments as bullet points */
       bullets: [
-        'Starting next week.'
+        'Soon to be working with Azure, React, .NET and React.'
+      ],
+    },
+    {
+      role: 'Co-Founder / CTO',
+      company: 'Mockingbird',
+      url: 'https://mockingbirdai.com.au',
+      dates: 'Mar 2026 – Present',
+      bullets: [
+        'Bringing custom AI personas to usability testing.'
       ],
     },
     {
@@ -260,6 +262,19 @@ const portfolio = {
       year: 2025,
       github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
       demo: 'https://brandonhaledev.com/',
+    },
+    {
+      title: '20 Questions',
+      description:
+        'An AI-powered 20 Questions game featuring multiple difficulty levels, built with Claude AI. Players think of something and the AI asks yes/no questions to guess it.',
+      longDescription:
+        'A modern take on the classic 20 Questions game where Claude AI acts as the questioner, strategically narrowing down guesses across Easy, Medium, and Hard difficulty modes. Built with Next.js, React, and Tailwind CSS for a clean, responsive experience.',
+      featured: false,
+      category: 'personal',
+      tags: ['Next.js', 'React', 'Tailwind CSS', 'Claude AI', 'AI'],
+      year: 2026,
+      github: 'https://github.com/Brandon-Hale/20-questions',
+      demo: 'https://20qs.brandonhaledev.com/',
     },
     {
       title: 'AI Drone Tracking System',
