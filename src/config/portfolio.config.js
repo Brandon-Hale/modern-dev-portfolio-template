@@ -108,7 +108,7 @@ const portfolio = {
       dates: 'Apr 2026 – Present',
       /** Key accomplishments as bullet points */
       bullets: [
-        'Soon to be working with Azure, React, .NET and React.'
+        'Working on cloud‑native applications within the Digital Experience Team.'
       ],
     },
     {
