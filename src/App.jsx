@@ -25,7 +25,7 @@ function CursorDot() {
     <motion.div
       className="custom-cursor"
       animate={{ x: mouse.x - 6, y: mouse.y - 6 }}
-      transition={{ type: 'spring', stiffness: 2000, damping: 80, mass: 0.2 }}
+      transition={{ type: 'spring', stiffness: 4000, damping: 100, mass: 0.1 }}
     />
   )
 }

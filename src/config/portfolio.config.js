@@ -222,6 +222,7 @@ const portfolio = {
         'Supabase',
         'Prisma',
         'Claude API',
+        'Python',
         'RAG',
         'AI',
         'UX',
@@ -262,6 +263,19 @@ const portfolio = {
       year: 2025,
       github: 'https://github.com/Brandon-Hale/modern-dev-portfolio-template',
       demo: 'https://brandonhaledev.com/',
+    },
+    {
+      title: 'How Does It Work',
+      description:
+        'Open-source platform for visually understanding internet and code concepts through interactive explanations.',
+      longDescription:
+        'A learning platform that breaks down how core internet and programming concepts work using visual, interactive explanations. Currently in early development. Built with Next.js, TypeScript, and React.',
+      featured: false,
+      category: 'open-source',
+      tags: ['Next.js', 'TypeScript', 'React'],
+      year: 2026,
+      github: 'https://github.com/Brandon-Hale/how-it-works',
+      demo: 'https://howdoesitwork.vercel.app/',
     },
     {
       title: '20 Questions',
