@@ -203,6 +203,9 @@ const portfolio = {
    * - year: Year built or started
    * - github: GitHub repository URL
    * - demo: Optional live demo URL
+   * - image: Optional banner image path (e.g. '/projects/mockingbird.jpg').
+   *         Recommended export size 1280×512 (5:2). Falls back to an
+   *         auto-generated gradient when omitted. Place files in /public/projects/.
    */
   projects: [
     {

@@ -33,17 +33,25 @@ const CATEGORY_LABELS = {
 }
 
 export default function ProjectCard({ project, onTagClick }) {
-  const { title, description, featured, category, tags, year, github, demo } = project
+  const { title, description, featured, category, tags, year, github, demo, image } = project
 
   return (
     <Card featured={featured}>
-      {/* Gradient banner */}
+      {/* Banner: project image if provided, otherwise auto-generated gradient */}
       <div
-        className="h-36 relative"
-        style={{ background: generateGradient(title) }}
+        className="aspect-[5/2] relative overflow-hidden"
+        style={image ? undefined : { background: generateGradient(title) }}
       >
+        {image && (
+          <img
+            src={image}
+            alt={`${title} preview`}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+        )}
         {featured && (
-          <span className="absolute top-3 right-3 bg-white/90 text-accent text-xs font-mono font-medium px-2.5 py-1 rounded-full">
+          <span className="absolute top-3 right-3 bg-white/90 text-accent text-xs font-mono font-medium px-2.5 py-1 rounded-full z-20">
             Featured
           </span>
         )}
